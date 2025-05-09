@@ -86,7 +86,6 @@ const reducer = (state: State, action: Action): State => {
 
   if (action.type === 'deleteTodo') {
     const { todos, activeCount } = state;
-
     const index = todos.findIndex(todo => todo.id === action.payload);
 
     if (index === -1) {
@@ -98,7 +97,7 @@ const reducer = (state: State, action: Action): State => {
     return {
       ...state,
       activeCount: activeCount - +!todo.completed,
-      todos: [...todos.splice(0, index), ...todos.splice(index + 1)],
+      todos: [...todos.slice(0, index), ...todos.slice(index + 1)],
     };
   }
 
