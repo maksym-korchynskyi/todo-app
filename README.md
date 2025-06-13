@@ -4,7 +4,7 @@ This project is a simple and user-friendly Todo App website designed to help use
 
 ## Live Demo
 
-Experience the live website: [Todo App](https://maksym2493.github.io/todo-app/)
+Experience the live website: [Todo App](https://maksym-korchynskyi.github.io/todo-app/)
 
 ## Technologies Used
 
